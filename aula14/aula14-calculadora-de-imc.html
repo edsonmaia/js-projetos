@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14 de JS</title>
+    <link rel="stylesheet" href="css/aula14.css" />
+</head>
+<body>
+<main id='tela-principal'>
+    <h1>Calculadora de IMC</h1>
+    <form action="" method="POST" id='formulario'>
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input
+                type="text"
+                name="nome"
+                id="nome"
+                class="input"
+                autofocus
+                required
+            />
+        </div>
+        <div class="form-group">
+            <label for="idade">Idade</label>
+            <input
+                type="number"
+                min="0"
+                max="130"
+                name="idade"
+                id="idade"
+                class="input"
+                required
+            />
+        </div>
+        <div class="form-group">
+            <label for="peso">Peso</label>
+            <input
+                type="number"
+                step="0.01"
+                min="0.0"
+                max="500.0"
+                name="peso"
+                id="peso"
+                class="input"
+                required
+            />
+        </div>
+        <div class="form-group">
+            <label for="altura">Altura</label>
+            <input
+                type="number"
+                step="0.01"
+                min="0.0"
+                max="2.70"
+                name="altura"
+                id="altura"
+                class="input"
+                required
+            />
+        </div>
+<!-- BOTOES -->
+        <div class="form-group">
+            <button
+                type='submit'
+                class='botao'
+                id='btnEnviar'>
+                Enviar
+            </button>
+            <button
+                type='reset'
+                class='botao'
+                id='btnLimpar'>
+                Limpar
+            </button>
+        </div>
+
+        <div class="form-group">
+            <label for="imc">IMC</label>
+            <input
+                type="number"
+                name="imc"
+                id="resultadoImc"
+                class="input"
+                value='0.0'
+                disabled
+            />
+            <span id='aviso'></span>
+        </div>
+    </form>
+    <div id='resultado'>
+        <h2 id='id' class='pessoa'>IMC</h2>
+        <p id='nome' class='pessoa'></p>
+        <p id='idade' class='pessoa'></p>
+        <p id='peso' class='pessoa'></p>
+        <p id='altura' class='pessoa'></p>
+        <p id='imc' class='pessoa'></p>
+    </div>
+</main>
+<script src="js/aula14.js"></script>
+</body>
+</html>

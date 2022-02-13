@@ -1,0 +1,123 @@
+/* Aula 19 Conversor de Temperaturas */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #222;
+    color: #fff;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 1rem; /* espacamento interno */
+    /*
+    background-image:url('../images/the-mentalist.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    */
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin: 0.625rem;
+}
+
+.form-group {
+    text-align: center;
+    margin: 1rem;
+    padding: 0.625rem;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+}
+
+.instrucoes {
+    text-align: center;
+    margin: 1rem;
+}
+
+input[type=number] {
+    text-align: right;
+}
+
+input:disabled {
+    background: #ececec;
+    cursor: not-allowed;
+}
+
+input[type=range] {
+    cursor: pointer;
+    outline: none;
+}
+
+/* div class onde estao spans e range */
+.slider {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 1rem;
+}
+
+.slider span {
+    font-size: 1rem;
+    margin: 0 0.625rem;
+}
+
+/* datalist */
+#marcas {
+    color: #fff;
+}
+
+#btnZerar {
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnZerar:hover {
+    background: darkblue;
+    color: #fff;
+    transition: all .3s;
+}
+
+/* ANIMACAO */
+
+/* Animar o input */
+@keyframes piscar {
+    0% {
+        filter: drop-shadow(0 0 15px #00b0ff);
+        -webkit-filter: drop-shadow(0 0 15px #00b0ff);
+        -moz-filter: drop-shadow(0 0 15px #00b0ff);
+        -o-filter: drop-shadow(0 0 15px #00b0ff);
+        -ms-filter: drop-shadow(0 0 15px #00b0ff);
+    }
+    100% {
+    }
+}
+
+.animar {
+    animation: piscar .75s infinite alternate;
+}

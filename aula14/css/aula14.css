@@ -1,0 +1,106 @@
+/* CSS da aula 14 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    /* height: 100vh; */
+    background: #efefef;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+    padding: 1rem; /* espacamento interno */
+}
+
+section {
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 0.625rem;
+}
+
+/* CLASS PARA FORMATAR COM JS */
+.alerta {
+    background: #f44336;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* FORMULARIO */
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+/* DIV DOS INPUTS */
+.form-group {
+    margin: 0.625rem;
+}
+
+.input {
+    width: 100%;
+}
+
+/* INPUTS */
+input[type=number], input[type=text] {
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* BOTOES */
+.botao {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#resultadoImc {
+    border: 1px solid #ccc;
+    width: 60px;
+}
+
+#aviso {
+    font-weight: bold;
+}
+
+/*
+#btnEnviar {
+    background: #1a237e;
+}
+
+#btnLimpar {
+    background: #ff3d00;
+}
+*/
+
+/* DIV #resultado */
+#resultado {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+/* .pessoa sao paragrafos */
+.pessoa {
+    padding: 0.625rem;
+}
+.pessoa:nth-child(odd) {
+    background: #efefef;
+}
+.pessoa:nth-child(even) {
+    background: #fff;
+}

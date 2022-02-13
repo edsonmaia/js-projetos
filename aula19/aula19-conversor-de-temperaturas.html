@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="images/favicon.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 19 de JS</title>
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/aula19.css" />
+</head>
+<body>
+<main class='tela-principal'>
+    <section class='conteudos'>
+    
+        <h1>Conversor de Temperaturas</h1>
+        <p class='instrucoes'>Use o slider da escala de graus Celsius para converter automaticamente.</p>
+        <button id='btnZerar' onClick="zerar()">Zerar</button>
+    
+        <div class="form-group">
+    
+            <label for="celsius">Celsius</label>
+            <input type="number" min='-273' max='100' step='0.01' name="numeroC" id="numeroC" value='0' disabled /> °C
+
+            <div class='slider'>
+
+                <span id='minC'>-273.00</span>
+
+                <input
+                    type="range"
+                    min='-273' max='100' step='0.01'
+                    name="celsius" id="celsius"
+                    value='0.00'
+                    list="marcas"
+                    onChange='atualizaC(); atualizaF(); atualizaK()'
+                    class="animar"
+                    autofocus
+                />
+
+                <span id='maxC'>100.00</span>
+
+            </div>
+        </div>
+
+<datalist id="marcas">
+    <option value="-100"><option value="-90"><option value="-80"><option value="-70"><option value="-60"><option value="-50"><option value="-40"><option value="-30"><option value="-20"><option value="-10">
+    <option value="0"><option value="10"><option value="20"><option value="30"><option value="40"><option value="50"><option value="60"><option value="70"><option value="80"><option value="90"><option value="100">
+</datalist>
+
+        <div class="form-group">
+
+            <label for="fahrenheit">Fahrenheit</label>
+            <input type="number" min='-459' max='212' step='0.01' name="numeroF" id="numeroF" disabled> °F
+
+            <div class='slider'>
+                <span id='minC'>-459.40</span>
+                <input type="range" min='-459' max='212' step='0.01' name="fahrenheit" id="fahrenheit" value='32.00' />
+                <span id='maxC'>212.00</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+
+            <label for="kelvin">Kelvin</label>
+            <input type="number" min='0' max='375.15' step='0.01' name="numeroK" id="numeroK" disabled> K
+            
+            <div class="slider">
+                <span id='minC'>0.00</span>
+                <input type="range"  min='' max='373.15' step='0.01' name="kelvin" id="kelvin" value='273.00' />
+        <span id='maxC'>373.00</span>
+            </div>
+        </div>
+        <footer>Desenvolvido por Edson Maia &copy; 2021</footer>
+    </section>
+</main>
+<!-- JS externo -->
+<script src="js/aula19.js"></script>
+</body>
+</html>

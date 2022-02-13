@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="images/favicon.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 18 de JS</title>
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/aula18.css" />
+</head>
+<body>
+<main id='tela-principal'>
+    <h1>Conversor de Moedas</h1>
+    <section class='conteudos'>
+        <div class='form-group'>
+            <label for="valorEmReal">R$</label>
+            <input
+                type="number"
+                name="valorEmReal"
+                id="valorEmReal"
+                class='input'
+                step='0.01'
+                min='0.00'
+                max='9999999999.99'
+                value=''
+                tabindex="1"
+                onClick='ativarBotao()'
+                onChange='ativarBotao()'
+                autofocus
+                required
+            />
+       </div>
+
+       <div class="form-group">             
+            <input
+                type="radio"
+                id='dolar'
+                name="moedaEstrangeira"
+                class="input radio"
+                value='Dólar'
+                tabindex="2"
+            /> <label for="dolar">Dólar</label>
+
+            <input
+                type="radio"
+                id='euro'
+                name="moedaEstrangeira"
+                class="input radio"
+                value='Euro'
+                tabindex="3"
+            /> <label for="euro">Euro</label>
+
+            <input
+                type="radio"
+                id='libra'
+                name="moedaEstrangeira"
+                class="input radio"
+                value='Libra'
+                tabindex="4"
+            /> <label for="libra">Libra</label>
+
+            <input
+                type="radio"
+                id='bitcoins'
+                name="moedaEstrangeira"
+                class="input radio"
+                value='Bitcoins'
+                tabindex="5"
+            /> <label for="bitcoins">Bitcoins</label>
+       </div>
+       <div class="form-group">
+           <button class='desativado botao' id='btnConverter'
+           onClick='ativarBotao(); bloquearBotao()' disabled>Converter</button>
+           <button type="reset" class='botao' id='btnLimpar' tabindex="7">Limpar</button>
+       </div>
+    </section>
+    <div class="instrucoes">
+        <p class='centro' id='aviso'>Digite o valor, escolha a moeda e converter</p>
+    </div>
+    <br>
+    <div class="instrucoes" style='background:#222; border:0'>
+        <figure id='imgMoedas' class='centro'>
+            <img class='animar' src="images/moedas/real.png" alt="Real" width='100px'/>
+            <img class='animar' src="images/moedas/dolar.png" alt="Moeda Estrangeira" width='100px'/>
+        </figure>
+    </div>
+    
+</main>
+<!-- JS externo -->
+<script src="js/aula18.js"></script>
+</body>
+</html>
