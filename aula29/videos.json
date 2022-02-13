@@ -1,0 +1,372 @@
+{
+    "categorias" : [
+        {
+            "id": 1,
+            "titulo": "Geografia",
+            "cor": "#004d40"
+        },
+        {
+            "id": 2,
+            "titulo": "Como fazer e Como usar",
+            "cor": "#e91e63"
+        },
+        {
+            "id": 3,
+            "titulo": "Astronomia e Geografia",
+            "cor": "#4a148c"
+        },
+        {
+            "id": 4,
+            "titulo": "Climatologia, Meteorologia e Vegetação",
+            "cor": "#311b92"
+        },
+        {
+            "id": 5,
+            "titulo": "Geologia e Hidrografia",
+            "cor": "#9c27b0"
+        },
+        {
+            "id": 6,
+            "titulo": "Geografia do Brasil",
+            "cor": "#1b5e20"
+        }
+    ],
+    "videos": [
+        {
+            "id": 1,
+            "categoriaId": 1,
+            "videoId":"B_nq7VTJZds",
+            "titulo":"As paisagens do mundo",
+            "descricao":"Conceito fundamental de Geografia sobre Paisagem dentro da visão Geográfica."
+        },
+        {
+            "id": 2,
+            "categoriaId": 1,
+            "videoId":"8PjBddZ2cdo",
+            "titulo":"Paisagens e suas transformações",
+            "descricao":"Principais elementos da paisagem e as transformações da paisagem."
+        },
+        {
+            "id": 3,
+            "categoriaId": 1,
+            "videoId":"yqZsBn5Z1xc",
+            "titulo":"Paisagem Geográfica e Espaço Geográfico",
+            "descricao":"Conceitos de Paisagem Geográfica e Espaço Geográfico."
+        },
+        {
+            "id": 4,
+            "categoriaId": 1,
+            "videoId":"ee15tCw1kYo",
+            "titulo":"Espaço, Lugar e Território",
+            "descricao":"Conceitos fundamentais de Espaço, Lugar e Território."
+        },
+        {
+            "id": 5,
+            "categoriaId": 1,
+            "videoId":"QUc_M1b1uNE",
+            "titulo":"Orientação e Localização",
+            "descricao":"Como se orientar e como se localizar. Bases da Geografia e Cartografia."
+        },
+        {
+            "id": 6,
+            "categoriaId": 1,
+            "videoId":"YzBkkC2SXxM",
+            "titulo":"Formas de Representação da Terra: os Mapas",
+            "descricao":"Como fazer a representação do Planeta Terra. Forma frequente por meio de mapas, mas, podemos usar também maquetes, globo terrestre, imagens digitais, etc."
+        },
+        {
+            "id": 7,
+            "categoriaId": 2,
+            "videoId":"zBVCW8xc19Q",
+            "titulo":"Produzir Globo Terrestre",
+            "descricao":"Aprenda como produzir o seu próprio Globo Terrestre."
+        },
+        {
+            "id": 8,
+            "categoriaId": 2,
+            "videoId":"QZ25iNV4bQs",
+            "titulo":"Como fazer bússola",
+            "descricao":"Aprenda como fazer uma bússola."
+        },
+        {
+            "id": 9,
+            "categoriaId": 2,
+            "videoId":"pvFy8PhJ-sY",
+            "titulo":"Como fazer jogo da memória",
+            "descricao":"Aprenda como fazer um jogo da memória sobre os pontos cardeais e colaterais. Esta é a versão para você desenhar."
+        },
+        {
+            "id": 10,
+            "categoriaId": 2,
+            "videoId":"Cy7Y8Jmdw8w",
+            "titulo":"Como fazer jogo da memória impresso",
+            "descricao":"Aprenda como fazer um jogo da memória sobre os pontos cardeais e colaterais. Esta é a versão impressa."
+        },
+        {
+            "id": 11,
+            "categoriaId": 2,
+            "videoId":"AeHMawcMxVQ",
+            "titulo":"Como fazer maquete em EVA",
+            "descricao":"Aprenda como fazer maquete do relevo do Brasil em EVA."
+        },
+        {
+            "id": 12,
+            "categoriaId": 2,
+            "videoId":"1PZIVrYUIhI",
+            "titulo":"Como usar o Google Earth",
+            "descricao":"Aprenda como usar o Google Earth."
+        },
+        {
+            "id": 13,
+            "categoriaId": 2,
+            "videoId":"70LgFtkVfzY",
+            "titulo":"App Merge Explorer + Cubo impresso",
+            "descricao":"Aprenda como usar o app Merge Explorer de Realidade Aumentada e Realidade Virtual, imprima o cubo e utilize o app do celular ou tablet."
+        },
+        {
+            "id": 14,
+            "categoriaId": 3,
+            "videoId":"2JTPUXqWEKg",
+            "titulo":"A Terra no Sistema Solar",
+            "descricao":"Aprenda sobre o Universo, Sistemas Planetários, Nosso Sistema e sobre nosso Planeta no Espaço."
+        },
+        {
+            "id": 15,
+            "categoriaId": 3,
+            "videoId":"_hvwmwCIbSA",
+            "titulo":"A Terra em movimento Rotação e Translação",
+            "descricao":"Aprenda sobre os dois principais movimentos da Terra no Espaço e quais são as suas consequências."
+        },
+        {
+            "id": 16,
+            "categoriaId": 4,
+            "videoId":"1lZDLyMKwwE",
+            "titulo":"A circulação geral da atmosfera, o tempo e o clima",
+            "descricao":"O que é a atmosfera, como ela funciona, quais são as diferenças entre tempo atmosférico e clima, quais são os principais elementos do clima."
+        },
+        {
+            "id": 17,
+            "categoriaId": 4,
+            "videoId":"11NJB81im1Q",
+            "titulo":"Ciclones, Furacões, Tufões e Tornados (Aula Extra)",
+            "descricao":"Aprenda as diferenças entre estes fenômenos meteorológicos, quais são as suas causas e consequências."
+        },
+        {
+            "id": 18,
+            "categoriaId": 4,
+            "videoId":"V-v3wTK_KpI",
+            "titulo":"As intervenções humanas na dinâmica climáticas",
+            "descricao":"Veja como o ser humano altera a dinâmica do clima."
+        },
+        {
+            "id": 19,
+            "categoriaId": 4,
+            "videoId":"bhQsWpGSLeQ",
+            "titulo":"Os climas e a vegetação natural",
+            "descricao":"Aprenda sobre as relações entre climas e vegetação natural."
+        },
+        {
+            "id": 20,
+            "categoriaId": 4,
+            "videoId":"oYZZybbhJII",
+            "titulo":"Os climas do mundo e do Brasil",
+            "descricao":"Conheça os principais climas do Mundo e do Brasil."
+        },
+        {
+            "id": 21,
+            "categoriaId": 4,
+            "videoId":"tnFEqmtoNY8",
+            "titulo":"Terra: grandes paisagens vegetais naturais ",
+            "descricao":"Conheça os principais tipos de formações vegetais naturais do mundo todo."
+        },
+        {
+            "id": 22,
+            "categoriaId": 5,
+            "videoId":"cp_xDdMT6eU",
+            "titulo":"Litosfera e o Relevo Continental",
+            "descricao":"Aprenda sobre a Litosfera, relevo continental e os agentes internos modeladores do relevo."
+        },
+        {
+            "id": 23,
+            "categoriaId": 5,
+            "videoId":"3XPAx3aQ760",
+            "titulo":"Relevo continental e agentes externos",
+            "descricao":"Aprenda mais sobre a Litosfera, relevo continelta e os agentes externos modeladores do relevo."
+        },
+        {
+            "id": 24,
+            "categoriaId": 5,
+            "videoId":"QWBDmGd9t4s",
+            "titulo":"A Hidrosfera e a distribuição das águas",
+            "descricao":"Aprenda sobre a Hidrosfera, sua dinâmica e sobre a distribuição das águas salgada e doce no planeta Terra."
+        },
+        {
+            "id": 25,
+            "categoriaId": 6,
+            "videoId":"klqep18rZ1M",
+            "titulo":"A formação do território brasileiro",
+            "descricao":""
+        },
+        {
+            "id": 26,
+            "categoriaId": 6,
+            "videoId":"dpKj95xJC5I",
+            "titulo":"Localização e extensão do território brasileiro",
+            "descricao":""
+        },
+        {
+            "id": 27,
+            "categoriaId": 6,
+            "videoId":"-k5rFGgXpGM",
+            "titulo":"A regionalização do território brasileiro",
+            "descricao":""
+        },
+        {
+            "id": 28,
+            "categoriaId": 6,
+            "videoId":"V3bQPu6UgFw",
+            "titulo":"Domínios naturais (morfoclimáticos) ameaças e conservação",
+            "descricao":""
+        },
+        {
+            "id": 29,
+            "categoriaId": 6,
+            "videoId":"f8qtD6GZ1DY",
+            "titulo":"A população brasileira",
+            "descricao":""
+        },
+        {
+            "id": 30,
+            "categoriaId": 6,
+            "videoId":"xJTYkDex8ng",
+            "titulo":"Brasil migrações internas e emigração",
+            "descricao":""
+        },
+        {
+            "id": 31,
+            "categoriaId": 6,
+            "videoId":"MPHEV86MUXo",
+            "titulo":"População e Trabalho mulheres, crianças e idosos",
+            "descricao":""
+        },
+        {
+            "id": 32,
+            "categoriaId": 6,
+            "videoId":"ZBGbYCE6J2I",
+            "titulo":"Brasil diversidade cultural e os afro brasileiros",
+            "descricao":""
+        },
+        {
+            "id": 33,
+            "categoriaId": 6,
+            "videoId":"fp6kMFatBhw",
+            "titulo":"A industrialização brasileira",
+            "descricao":""
+        },
+        {
+            "id": 34,
+            "categoriaId": 6,
+            "videoId":"yqGJiwPXBac",
+            "titulo":"A sociedade de consumo e o meio ambiente",
+            "descricao":""
+        },
+        {
+            "id": 35,
+            "categoriaId": 6,
+            "videoId":"d6VYQP33zfg",
+            "titulo":"Geografia Redes de Transportes no Brasil",
+            "descricao":""
+        },
+        {
+            "id": 36,
+            "categoriaId": 6,
+            "videoId":"ZwYMlm2F6II",
+            "titulo":"Geografia Redes de Comunicação no Brasil",
+            "descricao":""
+        },
+        {
+            "id": 37,
+            "categoriaId": 6,
+            "videoId":"IKZ9eNcY3kk",
+            "titulo":"Região Norte Localização e Meio Natural",
+            "descricao":""
+        },
+        {
+            "id": 38,
+            "categoriaId": 6,
+            "videoId":"cC3gbxDndUA",
+            "titulo":"Região Norte A construção do espaço geográfico",
+            "descricao":""
+        },
+        {
+            "id": 39,
+            "categoriaId": 6,
+            "videoId":"ae3gtTWuGus",
+            "titulo":"Amazônia Conflitos, desmatamento e biodiversidade",
+            "descricao":""
+        },
+        {
+            "id": 40,
+            "categoriaId": 6,
+            "videoId":"_U_qamZYD5A",
+            "titulo":"Amazônia O desenvolvimento sustentável",
+            "descricao":""
+        },
+        {
+            "id": 41,
+            "categoriaId": 6,
+            "videoId":"mzRSvYkmgQo",
+            "titulo":"Região Nordeste O meio natural e a Zona da Mata",
+            "descricao":""
+        },
+        {
+            "id": 42,
+            "categoriaId": 6,
+            "videoId":"cC77ZOlynEo",
+            "titulo":"Região Nordeste O Agreste",
+            "descricao":""
+        },
+        {
+            "id": 43,
+            "categoriaId": 6,
+            "videoId":"dO-6jkAmXVk",
+            "titulo":"Região Nordeste O Sertão",
+            "descricao":""
+        },
+        {
+            "id": 44,
+            "categoriaId": 6,
+            "videoId":"sA6tGebAEqE",
+            "titulo":"Região Nordeste O Meio-Norte",
+            "descricao":""
+        },
+        {
+            "id": 45,
+            "categoriaId": 6,
+            "videoId":"3QZ1YMTc2Mk",
+            "titulo":"Região Sudeste O meio natural",
+            "descricao":""
+        },
+        {
+            "id": 46,
+            "categoriaId": 6,
+            "videoId":"GEic5_AjHCI",
+            "titulo":"Região Sudeste Ocupação e Povoamento",
+            "descricao":""
+        },
+        {
+            "id": 47,
+            "categoriaId": 6,
+            "videoId":"Glxtr3xeEMY",
+            "titulo":"Região Sudeste A Cafeicultura e a Organização do Espaço",
+            "descricao":""
+        },
+        {
+            "id": 48,
+            "categoriaId": 6,
+            "videoId":"Xqvn8eatdpM",
+            "titulo":"Região Sudeste População e Economia",
+            "descricao":""
+        }
+    ]
+}

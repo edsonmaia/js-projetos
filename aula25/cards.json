@@ -1,0 +1,84 @@
+{
+   "lutadores":[
+      {
+         "nome":"Mark Coleman",
+         "nacionalidade":"Norte-americano",
+         "idade":56,
+         "peso":93,
+         "altura":1.85,
+         "foto":"mark_coleman.jpg"
+      },
+      {
+         "nome":"Wanderlei César da Silva",
+         "nacionalidade":"Brasileiro",
+         "idade":45,
+         "peso":93,
+         "altura":1.88,
+         "foto":"wanderlei_silva.jpg"
+      },
+      {
+         "nome":"Fedor Vladimirovich Emelianenko",
+         "nacionalidade":"Russo",
+         "idade":45,
+         "peso":106,
+         "altura":1.83,
+         "foto":"fedor_emelianenko.jpg"
+      },
+      {
+         "nome":"Maurício Milani Rua",
+         "nacionalidade":"Brasileiro",
+         "idade":39,
+         "peso":93,
+         "altura":1.85,
+         "foto":"mauricio_rua.jpg"
+      },
+      {
+         "nome":"Daniel Jeffery Henderson",
+         "nacionalidade":"Norte-americano",
+         "idade":51,
+         "peso":84,
+         "altura":1.80,
+         "foto":"dan_henderson.jpg"
+      },
+      {
+         "nome":"Takanori Gomi",
+         "nacionalidade":"Japonês",
+         "idade":43,
+         "peso":70,
+         "altura":1.73,
+         "foto":"takanori_gomi.jpg"
+      },
+      {
+         "nome":"Mirko Filipović",
+         "nacionalidade":"Croata",
+         "idade":47,
+         "peso":106,
+         "altura":1.88,
+         "foto":"mirko_cro_cop.jpg"
+      },
+      {
+         "nome":"Antônio Rodrigo Nogueira",
+         "nacionalidade":"Brasileiro",
+         "idade":45,
+         "peso":110,
+         "altura":1.91,
+         "foto":"antonio_rodrigo_nogueira_minotauro.jpg"
+      },
+      {
+         "nome":"Alistair Cees Overeem",
+         "nacionalidade":"Holandês",
+         "idade":41,
+         "peso":112,
+         "altura":1.93,
+         "foto":"alistair_overeem.jpg"
+      },
+      {
+         "nome":"Vitor Vieira Belfort",
+         "nacionalidade":"Brasileiro",
+         "idade":44,
+         "peso":84,
+         "altura":1.83,
+         "foto":"vitor_belfort.jpg"
+      }
+   ]
+}

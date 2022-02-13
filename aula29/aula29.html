@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="images/favicon2.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 29 de JS</title>
+    <link rel="stylesheet" href="css/aula29.css" />
+</head>
+<body>
+    <main class='tela-principal'>
+
+        <header id='topo'>
+            <h1>MaiaFlix</h1> <span><a href=""><i class="far fa-user-circle"></i></a></span>
+        </header>
+        
+        <section id='conteudos'>
+            <article id='banner-principal'>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_hvwmwCIbSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- <h2>Titulo do Video</h2> -->
+            </article>
+
+            <!-- LISTA 1 -->
+            <h3 class='tituloCategoria'>Categoria</h3>
+            <article class='categoria'>
+                <button id='btnPrev' onclick="show(-1, 1)">&lt;</button>
+                <ul id='lista1' class='videos'>
+
+                </ul>
+                <button id='btnNext' onclick="show(+1, 1)">&gt;</button>
+            </article>
+
+            <!-- LISTA 2 -->
+            <h3 class='tituloCategoria'>Categoria</h3>
+            <article class='categoria'>
+                <button id='btnPrev' onclick="show(-1, 2)">&lt;</button>
+                <ul id='lista2' class='videos'>
+
+                </ul>
+                <button id='btnNext' onclick="show(+1, 2)">&gt;</button>
+            </article>
+
+            <!-- LISTA 3 -->
+            <h3 class='tituloCategoria'>Categoria</h3>
+            <article class='categoria'>
+                <button id='btnPrev' onclick="show(-1, 3)">&lt;</button>
+                <ul id='lista3' class='videos'>
+
+                </ul>
+                <button id='btnNext' onclick="show(+1, 3)">&gt;</button>
+            </article>
+
+            <!-- LISTA 4 -->
+            <h3 class='tituloCategoria'>Categoria</h3>
+            <article class='categoria'>
+                <button id='btnPrev' onclick="show(-1, 4)">&lt;</button>
+                <ul id='lista4' class='videos'>
+
+                </ul>
+                <button id='btnNext' onclick="show(+1, 4)">&gt;</button>
+            </article>
+
+            <!-- LISTA 5 -->
+            <h3 class='tituloCategoria'>Categoria</h3>
+            <article class='categoria'>
+                <button id='btnPrev' onclick="show(-1, 5)">&lt;</button>
+                <ul id='lista5' class='videos'>
+
+                </ul>
+                <button id='btnNext' onclick="show(+1, 5)">&gt;</button>
+            </article>
+
+            <!-- LISTA 6 -->
+            <h3 class='tituloCategoria'>Categoria</h3>
+            <article class='categoria'>
+                <button id='btnPrev' onclick="show(-1, 6)">&lt;</button>
+                <ul id='lista6' class='videos'>
+
+                </ul>
+                <button id='btnNext' onclick="show(+1, 6)">&gt;</button>
+            </article>
+
+        </section>
+
+        <!-- Janela Modal nela vamos abrir os videos -->
+        <div id="abrirModal" class="modal">
+            <div>
+                <a href="#fechar" title="Fechar" class="fechar">x</a>
+                <iframe id='iframeVideo' width="560" height="315" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- autoplay; -->
+            </div>
+        </div>
+
+        <div id='aviso'>
+        
+        </div>
+
+        <footer id='rodape'>
+            <p>MaiaFlix &copy; Produzido por Edson Maia - 2021</p>
+        </footer>
+    </main>
+<script src="js/aula29.js"></script>
+<!-- FONT AWESOME -->
+<script src="https://kit.fontawesome.com/9c34151a1a.js" crossorigin="anonymous"></script>
+</body>
+</html>

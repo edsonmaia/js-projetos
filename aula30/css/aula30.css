@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,500&display=swap');
+
+/*
+    verde    #4caf50 #1b5e20
+    vermelho #f44336 #b71c1c
+    azul     #2196F3 #0d47a1
+    roxo     #9c27b0 #4a148c
+*/
+
+:root {
+    --principal : #b71c1c;
+    --secundaria: #f44336;
+
+    --cinza-escuro: #222;
+    --escuro: #191919;
+    --preto : #000;
+    --branco: #fff;
+    
+    --sucesso: #4caf50;
+    --perigo: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace, sans-serif;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    font-size: 1.25rem;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    background: #ccc;
+    width: 928px;
+    margin: 0 auto;
+}
+
+div#jogar {
+    width: 928px;
+    height: 2rem;
+    line-height: 2rem;
+    background: #ececec;
+    margin: 0 auto;
+}
+
+.form-group, input[type=number], select, button {
+    font-size: 1rem;
+    text-align: center;
+}
+
+button {
+    padding: 2px 5px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+}
+
+#btnJogar {
+    background-color: green;
+}
+
+#btnZerar {
+    background-color: red;
+}
+
+#articleMapa {
+    display: flex;
+    width: 928px;
+}
+
+#mapa {
+    -webkit-user-drag: none;
+    user-select: none;
+    width: 928px;
+    height: 596px;
+    border: 1px solid black;
+}
+
+.latitude, .longitude {
+    position: absolute;
+}
+
+.latitude {
+    width: 928px;
+    height: 5px;
+    background: rgba(255,0,0, 0.5);
+}
+
+.longitude {
+    width: 5px;
+    height: 595px;
+    background: rgba(0,0,255, 0.5);
+}
+
+aside {
+    width: 150px;
+    background: #ccc;
+    padding: 10px;
+    top: 0px;
+    font-size: 0.85rem;
+    color: #fff;
+}
+
+span {
+    width: 40px;
+}
+
+#player1 {
+    float: right;
+    font-size: 1.1rem;
+    text-align: right;
+    width: 219px;
+    position: absolute;
+    left: 0px;
+    background: #ccc;
+}
+
+#la {
+    color: red;
+}
+
+#lo {
+    color:blue;
+}
+
+#placar {
+    font-size: 1.1rem;
+    width: 219px;
+    height: 60px;
+    text-align: right;
+
+    position: absolute;
+    right: 0px;
+    background: #bbb;
+    color: #222;
+    font-weight: bold;
+}
+
+#pontosGreen {
+    color: green;
+}
+
+#pontosOrange {
+    color: orangered;
+}
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal > div {
+    width: 300px;
+    position: relative;
+    margin: 10% auto;
+    border-radius: 8px;
+    padding: 15px 20px;
+    background: #fff;
+}
+
+.modal h2 {
+    margin-bottom: 0.75rem;
+}
+
+.modal p {
+    font-size: 1.5rem;
+}
+
+.fechar {
+    text-decoration: none;
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 32px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    color: #fff;
+}

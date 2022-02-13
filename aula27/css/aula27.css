@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,500&display=swap');
+
+/*
+    verde    #4caf50 #1b5e20
+    vermelho #f44336 #b71c1c
+    azul     #2196F3 #0d47a1
+    roxo     #9c27b0 #4a148c
+*/
+
+:root {
+    --principal : #b71c1c;
+    --secundaria: #f44336;
+
+    --cinza-escuro: #222;
+    --escuro: #191919;
+    --preto : #000;
+    --branco: #fff;
+    
+    --sucesso: #4caf50;
+    --perigo: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background: var(--preto);
+    color: var(--branco);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro {
+    text-align: center;
+}
+
+#topo {
+    position: fixed;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background: var(--preto);
+    border-bottom: 2px solid var(--secundaria);
+}
+
+#topo h1 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin: 0.5rem;
+    color: var(--principal);
+}
+
+#topo span {
+    font-size: 1.5rem;
+    margin: 0 0.5rem 0 0;
+}
+
+#topo span a {
+    color: #fff;
+}
+
+#conteudos {
+    width: 100%;
+}
+
+#banner-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 390px;
+    padding-top: 3.9rem;
+    background-color: #111;
+    /*
+    background-image: url(../images/pexels-photo-592753.jpeg);
+    background-repeat: none;
+    background-size: cover;
+    */
+}
+
+#banner-principal h2 {
+    text-shadow: 0px 0px 5px #000;
+}
+
+iframe {
+    border-radius: 8px;
+    /* border: 2px solid var(--secundaria); */
+}
+
+/* section .categoria */
+.categoria {
+    display: flex;
+    align-items: center;
+
+    width: 680px;
+    height: 180px;
+    margin-right: 0.85rem;
+}
+
+h3 {
+    letter-spacing: 1px;
+    text-align: left;
+    margin: 0.5rem 0;
+}
+
+/* ul com li de cada video */
+.videos {
+    width: 640px;
+    display: flex;
+    gap: 1rem;
+}
+
+/* carrossel */
+ul {
+    display: flex;
+    overflow: hidden;
+}
+
+li {
+    display: inline-block;
+    height: 160px;
+    list-style: none;
+    border: 5px solid transparent;
+}
+
+li:hover {
+    border: 5px solid var(--secundaria);
+    border-radius: 10px;
+    cursor: pointer
+}
+
+#btnPrev, #btnNext {
+    font-size: 2rem;
+    cursor: pointer;
+    height: 150px;
+    border: 0;
+    width: 50px;
+    border-radius: 8px;
+    margin: 0 0.25rem;
+    background: var(--secundaria);
+    color: var(--branco);
+}
+
+#rodape {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* position: sticky;
+    bottom: 0;
+    */
+    background: var(--preto);
+    border-top: 2px solid var(--secundaria);
+    margin-top: 0.5rem;
+}
+
+#rodape p {
+    text-align: center;
+}
+
+.capa-thumb {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* largura da barra de rolagem */
+  }
+  
+body::-webkit-scrollbar-track {
+    background: #222;        /* cor de fundo da barra de rolagem */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--principal); /* cor do scroll (thumb) da barra de rolagem */
+    border-radius: 20px;                /* arredondar o scroll (thumb) */
+    border: 3px solid #222;           /* criar um espaco em volta do scroll */
+}
+
+/* responsividade */
+@media (max-width: 680px) {
+    #banner-principal {
+        height: 350px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .categoria {
+        width: 100%;
+    }
+
+    .videos {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    #btnPrev, #btnNext {
+        width: 25px;
+    }
+    #btnPrev {
+        margin-left: 0.75rem;
+    }
+    #btnNext {
+        margin-right: 0.75rem;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="images/favicon.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 26 de JS</title>
+    <link rel="stylesheet" href="css/aula26.css" />
+</head>
+<body>
+    <main class="tela-principal">
+
+        <!-- Janela Modal -->
+        <div id="abrirModal" class="modal">
+            <div>
+                <a href="#fechar" title="Fechar" class="fechar">x</a>
+                <h2>Aviso</h2>
+                <p>É obrigatório escolher uma data, digitar uma citação e autoria antes de postar. </p>
+            </div>
+        </div>
+
+        <section class="sectionForm">
+
+            <h1>App Mensagem do Dia</h1>
+
+            <p id='aviso'> Seu app de mensagem do dia </p>
+            
+            <form id='formulario'>
+
+                <div class='form-group'>
+                    <label for="data">Data</label>
+                    <input type="date" name="data" id="data" required />
+                </div>
+
+                <div class='form-group'>
+                    <label for="citacao">Citação</label>
+                    <textarea rows='3' name="citacao" id="citacao" autofocus placeholder="Digite aqui a citação" required></textarea>
+                </div>
+
+                <div class='form-group'>
+                    <label for="autoria">Autoria</label>
+                    <input type="text" name="autoria" id="autoria" placeholder="Digite quem é o(a) autor(a) da citação"/>
+                </div>
+
+                <div id='divBotoes' class="form-group">
+                    <button
+                        type='button'
+                        id='btnCriar' class='btn'
+                        onClick='criarCitacao()'>
+                        Criar
+                    </button>
+                    <button type='reset' id='btnLimpar' class='btn'>Limpar</button>
+                </div>
+
+            </form>
+        </section>
+
+        <p id='aviso2'></p>
+
+        <section class="conteudos">
+            
+            <article id='citacao00' class="citacao fundo1">
+                <h2></h2>
+                <blockquote></blockquote>
+                <span></span>
+            </article>
+
+            <div id='exemplos' style='display:none;'>
+            <article id='citacao01' class="citacao fundo1">
+                <h2>04/10/2021</h2>
+                <blockquote>"A tecnologia move o mundo."</blockquote>
+                <span>Steve Jobs</span>
+            </article>
+
+            <article id='citacao02' class="citacao fundo2">
+                <h2>05/10/2021</h2>
+                <blockquote>"O espírito humano precisa prevalecer sobre a tecnologia."</blockquote>
+                <span>Albert Einstein</span>
+            </article>
+
+            <article id='citacao03' class="citacao fundo3">
+                <h2>06/10/2021</h2>
+                <blockquote>"Não corrigir nossas falhas é o mesmo que cometer novos erros."</blockquote>
+                <span>Confúcio</span>
+            </article>
+
+            <article id='citacao04' class="citacao fundo4">
+                <h2>07/10/2021</h2>
+                <blockquote>"Aqueles que não conseguem lembrar o passado estão condenados a repeti-lo."</blockquote>
+                <span>George Santayana</span>
+            </article>
+
+            <article id='citacao05' class="citacao fundo5">
+                <h2>08/10/2021</h2>
+                <blockquote>"A educação é a arma mais poderosa que você pode usar para mudar o mundo."</blockquote>
+                <span>Nelson Mandela</span>
+            </article>
+        </div> <!-- fim div #exemplos -->
+
+        </section>
+
+    </main>    
+
+<script src="js/aula26.js"></script>
+<script src="js/html2canvas.js"></script>
+</body>
+</html>

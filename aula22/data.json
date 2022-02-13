@@ -1,0 +1,121 @@
+{
+   "questoes":[
+      {
+         "numQuestao":0,
+         "pergunta":"pergunta",
+         "alternativaA":"Alternativa A",
+         "alternativaB":"Alternativa B",
+         "alternativaC":"Alternativa C",
+         "alternativaD":"Alternativa D",
+         "correta":"0"
+      },
+      {
+         "numQuestao":1,
+         "pergunta":"Setentrional e Meridional são sinônimos de...",
+         "alternativaA":"Leste e Oeste",
+         "alternativaB":"Norte e Sul",
+         "alternativaC":"Ocidental e Oriental",
+         "alternativaD":"Nordeste e Noroeste",
+         "correta":"Norte e Sul"
+      },
+      {
+         "numQuestao":2,
+         "pergunta":"Boreal é o mesmo que...",
+         "alternativaA":"Sul",
+         "alternativaB":"Leste",
+         "alternativaC":"Norte",
+         "alternativaD":"Oeste",
+         "correta":"Norte"
+      },
+      {
+         "numQuestao":3,
+         "pergunta":"Qual é a capital do Brasil?",
+         "alternativaA":"Rio de Janeiro",
+         "alternativaB":"Brasília",
+         "alternativaC":"Salvador",
+         "alternativaD":"Lisboa",
+         "correta":"Brasília"
+      },
+      {
+         "numQuestao":4,
+         "pergunta":"Austral é o mesmo que...",
+         "alternativaA":"Oeste",
+         "alternativaB":"Leste",
+         "alternativaC":"Norte",
+         "alternativaD":"Sul",
+         "correta":"Sul"
+      },
+      {
+         "numQuestao":5,
+         "pergunta":"A linha do Equador divide a Terra em...",
+         "alternativaA":"Leste e Oeste",
+         "alternativaB":"Norte e Sul",
+         "alternativaC":"Verão e Inverno",
+         "alternativaD":"Solstícios e Eclipses",
+         "correta":"Norte e Sul"
+      },
+      {
+         "numQuestao":6,
+         "pergunta":"Nascente é o mesmo que...",
+         "alternativaA":"Lado que o sol nasce",
+         "alternativaB":"Abaixo do Equador",
+         "alternativaC":"Lado que o sol se põe",
+         "alternativaD":"Acima do Equador",
+         "correta":"Lado que o sol nasce"
+      },
+      {
+         "numQuestao":7,
+         "pergunta":"Qual é o clima predominante do Brasil?",
+         "alternativaA":"Polar",
+         "alternativaB":"Tropical",
+         "alternativaC":"Desértico",
+         "alternativaD":"Temperado do Norte",
+         "correta":"Tropical"
+      },
+      {
+         "numQuestao":8,
+         "pergunta":"Poente é o mesmo que...",
+         "alternativaA":"Lado onde o sol se põe",
+         "alternativaB":"Lado onde o sol nasce",
+         "alternativaC":"Abaixo do Equador",
+         "alternativaD":"Acima do Equador",
+         "correta":"Lado onde o sol se põe"
+      },
+      {
+         "numQuestao":9,
+         "pergunta":"O Brasil se localiza em qual continente?",
+         "alternativaA":"África",
+         "alternativaB":"Europa",
+         "alternativaC":"Oceania",
+         "alternativaD":"América",
+         "correta":"América"
+      },
+      {
+         "numQuestao":10,
+         "pergunta":"Qual é a única capital do Brasil cortada pela linha do Equador?",
+         "alternativaA":"Belém",
+         "alternativaB":"São Luís",
+         "alternativaC":"Macapá",
+         "alternativaD":"Boa Vista",
+         "correta":"Macapá"
+      },
+      {
+         "numQuestao":11,
+         "pergunta":"Considerando a extensão territorial o Brasil é o ...",
+         "alternativaA":"3º maior",
+         "alternativaB":"2º maior",
+         "alternativaC":"4º maior",
+         "alternativaD":"5º maior",
+         "correta":"5º maior"
+      },
+      {
+         "numQuestao":12,
+         "pergunta":"A população estimada do Brasil em 2021 é de...",
+         "alternativaA":"190 milhões de hab.",
+         "alternativaB":"400 milhões de hab.",
+         "alternativaC":"1 bilhão de hab.",
+         "alternativaD":"211 milhões de hab.",
+         "correta":"211 milhões de hab."
+      }
+   ]
+}

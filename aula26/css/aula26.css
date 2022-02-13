@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    max-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aviso {
+    line-height: 2rem;
+}
+
+.sectionForm, .formulario, .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.sectionForm, .form-group {
+    padding: 1rem;
+}
+
+input, textarea {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 1rem;
+}
+
+.btn {
+    font-size: 2rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#btnCriar {
+    background: #9c27b0;
+}
+
+#btnLimpar {
+    background: #f44336;
+}
+
+#btnDownload {
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+#divBotoes {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* section */
+.conteudos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* article */
+.citacao {
+    width: 600px;
+    height: 600px;
+    margin-bottom: 0.25rem;
+}
+
+.citacao h2 {
+    margin: 1rem 2rem 0 2rem;
+}
+
+.citacao h3 {
+    margin: 2rem;
+    font-size: 0.95rem;
+}
+
+.citacao blockquote {
+    margin: 2rem 4rem 1rem 4rem;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.citacao span {
+    font-size: 2rem;
+    margin: 0 2rem;
+    display: block;
+    text-align: right;
+}
+
+.citacao {
+    font-family: 'Special Elite', cursive;
+    width: 600px; /* 600px */
+    height: 600px; /* 750px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    color: #111;
+    text-shadow: 0 0 5px #111;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.fundo1 {
+    background-image:url('../images/fundos/textura.jpg');
+    color: #663300;
+    text-shadow: 0 0 5px #fff;
+}
+
+.fundo2 {
+    background-image:url('../images/fundos/madeira1.jpg');
+    color: #fff;
+}
+
+.fundo3 {
+    background-image:url('../images/fundos/metal1.jpg');
+    color: #fff;
+    text-shadow: 0 0 5px #111;
+}
+
+.fundo4 {
+    background-image:url('../images/fundos/bronze1.jpg');
+    color: #fff;
+}
+
+.fundo5 {
+    background-image:url('../images/fundos/bronze2.jpg');
+    color: #fff;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal > div {
+    width: 400px;
+    position: relative;
+    margin: 20% auto;
+    border-radius: 8px;
+    padding: 15px 20px;
+    background: #fff;
+}
+
+.modal h2 {
+    margin-bottom: 0.75rem;
+}
+
+.modal p {
+    font-size: 1.5rem;
+}
+
+.fechar {
+    text-decoration: none;
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+}
+
+canvas {
+    margin-top: 2.3rem;
+}
+
+.ocultar {
+    display: none;
+}
+
+.exibir {
+    display: block;
+}

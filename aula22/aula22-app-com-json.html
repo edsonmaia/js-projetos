@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="images/favicon.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App JS com JSON</title>
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/aula22-app-com-json.css" />
+</head>
+<body>
+    <main class="tela-principal">
+        <section class="conteudos">
+
+            <h1 id='titulo'>App</h1>
+            
+            <article id='instrucoes' class='placar'>
+                Leia a questão e depois clique na resposta
+            </article>
+
+            <article class="questao">
+
+                <header class="topoQuestao">
+                    <span id='nQuestao'>?</span>
+                    <h2 id='pergunta'>???</h2>
+                </header>
+
+                <div class='corpoQuestao'>
+                    <ol class='alternativas'>
+                        <li id="a" value="1A" class='letras' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id="b" value="1B" class='letras' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id="c" value="1C" class='letras' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id="d" value="1D" class='letras' onClick='verificarSeAcertou(this, this)'></li>
+                    </ol>
+                </div>
+
+                <footer id='aviso' class='rodapeQuestao centro'>
+                        <span id='numero'></span>
+                        de <span id='total'></span>
+                </footer>
+
+            </article>
+
+            <footer class='centro' id='autoria'>
+                Desenvolvido por Edson Maia &copy; 2021
+            </footer>
+        
+        </section>
+
+    </main>
+
+    <audio src="assets/positive.mp3" id='somAcerto'></audio>
+    <audio src="assets/negative.mp3" id='somErro'></audio>
+    <audio src="assets/aplausos.mp3" id='somAplausos'></audio>
+
+    <input type="hidden" id='correct' name='correct' value='' />
+    <!-- JS EXTERNO -->
+    <script src="js/aula22-app-com-json.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+/* Aula 23 de JS Relogio Digital */
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;300;500&family=DM+Mono:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+font-family: 'Azeret Mono', monospace;
+font-family: 'DM Mono', monospace;
+*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#relogioDigital {
+    font-family: 'Nova Mono', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    user-select: none;
+
+    margin: 1rem;
+    padding: 0 1rem;
+    font-size: 2rem;
+
+    background-color: #222;
+    color : #fff;
+    border: 0;
+    border-radius: 8px;
+    font-size : 2rem;
+    text-align : center;
+}
+
+#telaSmart {
+    font-family: 'DM Mono', monospace;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    user-select: none;
+    padding: 1rem;
+    border-radius: 20px;
+    background: #111;
+    color: cyan;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#relogioSmart {
+    user-select: none;
+    margin-top: 1rem;
+}
+
+#hSmart, #mSmart {
+    font-size: 2rem;
+}
+
+#sSmart {
+    font-size: 1rem;
+}
+
+#dataSmart {
+    user-select: none;
+    color: magenta;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+#semana {
+    color: greenyellow;
+}
+
+@keyframes piscar {
+    to {
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+    }
+}
+
+.doisPontos {
+    animation: piscar 1s infinite;
+}
+
+.doisPontos:last-child {
+    font-size: 0.5rem;
+}
+
+#temperatura {
+    user-select: none;
+    margin-top: 1rem;
+    font-family: sans-serif;
+    font-size: 0.5rem;
+    color: #fff;
+}

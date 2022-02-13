@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="images/favicon2.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 28 de JS</title>
+    <link rel="stylesheet" href="css/aula28.css" />
+</head>
+<body>
+    <main class='tela-principal'>
+
+        <header id='topo'>
+            <h1>MaiaFlix</h1> <span><a href=""><i class="far fa-user-circle"></i></a></span>
+        </header>
+        
+        <section id='conteudos'>
+            <article id='banner-principal'>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/11NJB81im1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- <h2>Ciclones, Furacões, Tufões e Tornados</h2> Produção de Globo Terrestre -->
+            </article>
+
+            <h3><i class="fas fa-globe"></i> Geografia (<span class='numDeVideos'></span>)</h3>
+            <article class='categoria'>
+                <button id='btnPrev' onclick="show(-1, 1)">&lt;</button>
+                <ul id='lista1' class='videos'>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/B_nq7VTJZds/maxresdefault.jpg" alt="capa" onClick='abrirModal("B_nq7VTJZds")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/8PjBddZ2cdo/maxresdefault.jpg" alt="capa" onClick='abrirModal("8PjBddZ2cdo")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/yqZsBn5Z1xc/maxresdefault.jpg" alt="capa" onClick='abrirModal("yqZsBn5Z1xc")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/ee15tCw1kYo/maxresdefault.jpg" alt="capa" onClick='abrirModal("ee15tCw1kYo")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/QUc_M1b1uNE/maxresdefault.jpg" alt="capa" onClick='abrirModal("QUc_M1b1uNE")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/YzBkkC2SXxM/maxresdefault.jpg" alt="capa" onClick='abrirModal("YzBkkC2SXxM")' />
+                    </li>
+                </ul>
+                <button id='btnNext' onclick="show(+1, 1)">&gt;</button>
+            </article>
+
+            <h3><i class="fas fa-atlas"></i> Como fazer e Como usar (<span class='numDeVideos'></span>)</h3>
+
+            <article class='categoria'>
+                <button id='btnPrev' onclick="show(-1, 2)">&lt;</button>
+                <ul id='lista2' class='videos'>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/zBVCW8xc19Q/maxresdefault.jpg" alt="capa" onClick='abrirModal("zBVCW8xc19Q")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/QZ25iNV4bQs/maxresdefault.jpg" alt="capa" onClick='abrirModal("QZ25iNV4bQs")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/pvFy8PhJ-sY/maxresdefault.jpg" alt="capa" onClick='abrirModal("pvFy8PhJ-sY")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/Cy7Y8Jmdw8w/maxresdefault.jpg" alt="capa" onClick='abrirModal("Cy7Y8Jmdw8w")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/AeHMawcMxVQ/maxresdefault.jpg" alt="capa" onClick='abrirModal("AeHMawcMxVQ")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/1PZIVrYUIhI/maxresdefault.jpg" alt="capa" onClick='abrirModal("1PZIVrYUIhI")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/70LgFtkVfzY/maxresdefault.jpg" alt="capa" onClick='abrirModal("70LgFtkVfzY")' />
+                    </li>
+                </ul>
+                <button id='btnNext' onclick="show(+1, 2)">&gt;</button>
+            </article>
+
+            <h3><i class="fas fa-meteor"></i> Astronomia e Geografia (<span class='numDeVideos'></span>)</h3>
+
+            <article class='categoria'>
+                <button id='btnPrev' onclick="show(-1, 3)">&lt;</button>
+                <ul id='lista3' class='videos'>
+                    
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/2JTPUXqWEKg/maxresdefault.jpg" alt="capa" onClick='abrirModal("2JTPUXqWEKg")' />
+                    </li>
+
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/_hvwmwCIbSA/maxresdefault.jpg" alt="capa" onClick='abrirModal("_hvwmwCIbSA")' />
+                    </li>
+
+                </ul>
+                <button id='btnNext' onclick="show(+1, 3)">&gt;</button>
+            </article>
+
+            <h3><i class="fas fa-cloud-sun-rain"></i> Climatologia, Meteorologia, Vegetação (<span class='numDeVideos'></span>)</h3>
+
+            <article class='categoria'>
+                <button id='btnPrev' onclick="show(-1, 4)">&lt;</button>
+                <ul id='lista4' class='videos'>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/1lZDLyMKwwE/maxresdefault.jpg" alt="capa" onClick='abrirModal("1lZDLyMKwwE")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/11NJB81im1Q/maxresdefault.jpg" alt="capa" onClick='abrirModal("11NJB81im1Q")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/V-v3wTK_KpI/maxresdefault.jpg" alt="capa" onClick='abrirModal("V-v3wTK_KpI")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/bhQsWpGSLeQ/maxresdefault.jpg" alt="capa" onClick='abrirModal("bhQsWpGSLeQ")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/oYZZybbhJII/maxresdefault.jpg" alt="capa" onClick='abrirModal("oYZZybbhJII")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/tnFEqmtoNY8/maxresdefault.jpg" alt="capa" onClick='abrirModal("tnFEqmtoNY8")' />
+                    </li>
+                </ul>
+                <button id='btnNext' onclick="show(+1, 4)">&gt;</button>
+            </article>
+
+            <h3><i class="fas fa-water"></i> Geologia e Hidrografia (<span class='numDeVideos'></span>)</h3>
+
+            <article class='categoria'>
+                <button id='btnPrev' onclick="show(-1, 5)">&lt;</button>
+                <ul id='lista5' class='videos'>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/cp_xDdMT6eU/maxresdefault.jpg" alt="capa" onClick='abrirModal("cp_xDdMT6eU")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/3XPAx3aQ760/maxresdefault.jpg" alt="capa" onClick='abrirModal("3XPAx3aQ760")' />
+                    </li>
+                    <li>
+                        <img class='capa-thumb' src="https://img.youtube.com/vi/QWBDmGd9t4s/maxresdefault.jpg" alt="capa" onClick='abrirModal("QWBDmGd9t4s")' />
+                    </li>
+                </ul>
+                <button id='btnNext' onclick="show(+1, 5)">&gt;</button>
+            </article>
+                        
+        </section>
+
+        <!-- Janela Modal nela vamos abrir os videos -->
+        <div id="abrirModal" class="modal">
+            <div>
+                <a href="#fechar" title="Fechar" class="fechar">x</a>
+                <iframe id='iframeVideo' width="560" height="315" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- autoplay; -->
+            </div>
+        </div>
+
+        <footer id='rodape'>
+            <p>MaiaFlix &copy; Produzido por Edson Maia - 2021</p>
+        </footer>
+    </main>
+<script src="js/aula28.js"></script>
+<!-- FONT AWESOME -->
+<script src="https://kit.fontawesome.com/9c34151a1a.js" crossorigin="anonymous"></script>
+</body>
+</html>

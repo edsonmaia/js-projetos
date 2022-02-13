@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="images/favicon.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 30 de JS</title>
+    <link rel="stylesheet" href="css/aula30.css" />
+</head>
+<body>
+    <main class='tela-principal'>
+
+        <aside id='player1'>
+            <p id='la'>Latitude <span id='lat1'>0</span> </p>
+            <p id='lo'>Longitude <span id='lon1'>0</span></p>
+            <p id='coordenadas'></p>
+        </aside>
+
+        <h1 class='centro'>Jogo das Coordenadas Geográficas</h1>
+
+        <div id='jogar'>
+            <div class="form-group">
+
+                <label for="latitude">Latitude</label>
+                <input type="number" name="latitude" id="latitude"
+                min='0' max='90' step='5' required autofocus />
+
+                <select name="ns" id="ns">
+                    <option value="N">N</option>
+                    <option value="S">S</option>
+                </select>
+
+                &nbsp;
+
+                <label for="longitude">Longitude</label>
+
+                <input type="number" name="longitude" id="longitude"
+                min='0' max='180' step='5' required />
+
+                <select type="text" name="eo" id="eo">
+                    <option value="E">E</option>
+                    <option value="O">O</option>
+                </select>
+
+                <button id='btnJogar' onClick='jogada()'>Jogar</button>
+                &nbsp;
+                <!--
+                <button id='btnZerar' type='reset'>Zerar</button>
+                -->
+            </div>
+        </div>
+        <section class='conteudos'>
+            <article id='articleMapa'>
+                <div class="latitude"></div>
+                <div class="longitude"></div>
+                <img
+                    id='mapa' src="images/mapa-das-coordenadas.png"
+                    alt="Mapa das Coordenadas" />
+            </article>
+        </section>
+        
+        <aside id='placar'>
+            <p>Verde <span id='pontosGreen'></span></p>
+            <p>Laranja <span id='pontosOrange'></span></p>
+        </aside>
+
+        <!-- Janela Modal  -->
+        <div id="abrirModal" class="modal">
+            <div>
+                <a href="#fechar" title="Fechar" class="fechar">x</a>
+                <p id='coordenadasDaJogada'></p>
+            </div>
+        </div>
+
+        <!-- Janela Modal2  -->
+        <div id="abrirModal2" class="modal">
+            <div>
+                <a href="#fechar" title="Fechar" class="fechar">x</a>
+                <p id='aviso'></p>
+            </div>
+        </div>
+
+    </main>
+    <script src="js/aula30.js"></script>
+</body>
+</html>
